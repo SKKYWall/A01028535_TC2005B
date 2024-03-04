@@ -8,6 +8,8 @@ Diego Ortega Fernández
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+
 
 public class GameController : MonoBehaviour
 {
@@ -15,8 +17,11 @@ public class GameController : MonoBehaviour
     public GameObject dot;
     public float force;
 
-    public int poinstLeft;
-    public int pointsRight;
+    public int pointsLeft = 0;
+    public int pointsRight = 0;
+
+    public TMP_Text leftScore;
+    public TMP_Text rightScore;
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +39,14 @@ public class GameController : MonoBehaviour
         }
     }
 
-    void StartGame()
+    public void Reset(){
+
+        Destroy(dot);
+        StartGame();
+
+    }
+
+    public void StartGame()
     {
 
         // Create a copy of the prefab object
@@ -49,9 +61,11 @@ public class GameController : MonoBehaviour
     public void AddPoints(int side){
 
         if(side == 1){
-            poinstLeft++;
+            pointsLeft++;
+            leftScore.text = pointsLeft.ToString();
         } else {
             pointsRight++;
+            rightScore.text = pointsRight.ToString();
         }
         Destroy(dot);
         StartGame();
