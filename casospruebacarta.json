@@ -1,0 +1,27 @@
+[{
+    "descripcion": "Debe de recibir un json con las cartas nuevas que se van a agregar a la lista. Verifica que las cartas tengan todos los atributos antes de agregarlas a la lista. Verifica que no exista la carta en la lista antes de intentar agregarla. En caso de que no se pueda agregar, envía un mensaje de que no se pudo agregar en un json, con el código de estado adecuado. En caso de que sí se haya agregado, regresa un mensaje en un json de que sí se agregó correctamente.",
+    "endpoint":"api/cards",
+    "data": {
+        
+            "Nombre":"morata","Posicion":"MC","Ataque":100,
+            "Mediocampo":100,
+            "Defensa":100,"Costo":100,"id_equipo":3
+            
+    }
+    
+},
+{
+    "descripcion": "Debe de poder actualizar una carta en base a su ID. Recibe los campos que se van a actualizar en un json, y solo actualiza los campos que vienen en el json. Verifica que la carta exista antes de intentar actualizarla.",
+    "endpoint":"api/cards/2",
+    "data": {
+        
+            "Nombre":"Morata","Posicion":"MC","Ataque":100,
+            "Mediocampo":100,
+            "Defensa":100,"Costo":100,"id_equipo":3
+            
+    }
+
+    
+}]
+
+

@@ -1,14 +1,18 @@
 {
-  "name": "a01028535_tc2005b",
+  "name": "api",
   "version": "1.0.0",
-  "description": ":)",
-  "main": "\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001bapp\u001b[C\u001b\u001b[Cp",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
   "scripts": {
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.3"
+    "cors": "^2.8.5",
+    "express": "^4.19.1",
+    "mysql2": "^3.9.2"
   }
 }
