@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background-image: linear-gradient(
+            rgba(0,0,0,0.7),
+            rgba(0,0,0,0.7)),
+            url(/css/fucho.jpg);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 50vh;
+        display: flex;
+        align-items: center;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFDFC;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover{
+    color: #ce9678;
+}
+
+
+.header-content{
+    text-align: center;
+}
+
+.header-content h1{
+    font-size: 75px;
+    line-height: 80px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p{
+    font-size: 16px;
+    color: #c5c5c5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.gdd{
+    display: flex;
+}
+
+.gdd-1{
+    width: 50%;
+    padding: 50px 50px 100px 50px;
+    background-color: #e2ddd0;
+
+}
+
+.gdd-1 p{
+
+    font-size: 20px;
+    color: #323337;
+    margin-bottom: 0px;
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    line-height: 1;
+}
+
+.gdd-2 {
+    background-image: url(/css/mecanicas2.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 115%;
+    width: 50%;
+}
+
+.gdd-3 {
+    background-image: url(/css/mentalidad3.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 158%;
+    width: 50%;
+}
+
+
+h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+.footer{
+    padding: 50px;
+    background-color: #000000;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}

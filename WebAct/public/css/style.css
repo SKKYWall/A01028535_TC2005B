@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #e2ddd0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background-image: linear-gradient(
+            rgba(0,0,0,0.7),
+            rgba(0,0,0,0.7)),
+            url(/css/fucho.jpg);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 50vh;
+        display: flex;
+        align-items: center;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFDFC;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover{
+    color: #ce9678;
+}
+
+
+.header-content{
+    text-align: center;
+}
+
+.header-content h1{
+    font-size: 75px;
+    line-height: 80px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p{
+    font-size: 16px;
+    color: #c5c5c5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+
+h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.estadisticas{
+    padding: 50px;
+    text-align: center;
+}
+
+
+.estadisticas-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #E1E2E6;
+}
+
+
+.estadisticas-1{
+    flex: 0 0 calc(33.33% - 20px);
+    padding: 15px 25px;
+    padding-bottom: 100px;
+}
+
+.estadisticas-1 canvas {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.estadisticas-1 h3{
+    font-size: 25px;
+    padding-bottom: 35px;
+    color: #323337;
+}
+
+.footer{
+    padding: 25px;
+    background-color: #000000;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.unity {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    height: 130vh; /* Establece la altura de la sección al 100% de la altura visible del viewport */
+    position: relative; /* Establece la posición relativa para los elementos hijos */
+    background-image: url('imagen3.webp'); /* Ruta de la imagen que deseas usar como fondo */
+    background-size: cover; /* Escala la imagen para que cubra todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    padding-bottom: 50px;
+}
+
+.unity h2 {
+    position: absolute;
+    top: 50px; /* Cambiado de px a 50px para que el título tenga un espacio desde la parte superior */
+    left: 50%;
+    padding-bottom: 20px; /* Ajustado el espacio inferior */
+    transform: translateX(-50%);
+    z-index: 1;
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px; /* Agregado margen inferior para el espacio entre el título y el contenido de Unity */
+}
+
+#unity-container {
+    margin-top: 200px; /* Agrega un margen superior para evitar que el juego cubra el texto */
+}
+
+
